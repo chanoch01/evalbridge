@@ -1,0 +1,14 @@
+.env
+.venv/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Downloaded datasets stay out of git (re-download with `make download`)
+data/
+
+# LLM judge cache (SQLite) and demo output
+.cache/
+reports/demo/
+tmp*/

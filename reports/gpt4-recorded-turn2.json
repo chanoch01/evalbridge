@@ -1,0 +1,91 @@
+{
+  "evalbridge_version": "0.1.0",
+  "judge": {
+    "name": "gpt4-recorded",
+    "kind": "RecordedJudge",
+    "prompt_version": null,
+    "prompt_sha": null,
+    "model": null
+  },
+  "data": {
+    "source": "lmsys/mt_bench_human_judgments@f7d2896",
+    "split": "human",
+    "turn": 2,
+    "limit": null,
+    "sample_seed": 0,
+    "n_items": 904,
+    "n_questions": 80,
+    "n_human_votes": 1666,
+    "bootstrap": {
+      "n_boot": 1000,
+      "seed": 0,
+      "cluster": "question_id"
+    }
+  },
+  "result": {
+    "name": "gpt4-recorded",
+    "n_items_scored": 904,
+    "n_parse_errors": 0,
+    "n_votes_scored": 1666,
+    "verdict_used": "single order",
+    "agreement": {
+      "agreement_with_ties": {
+        "estimate": 0.6572629051620649,
+        "ci_low": 0.6204924934400639,
+        "ci_high": 0.6932150799760499,
+        "n": 1666
+      },
+      "agreement_without_ties": {
+        "estimate": 0.8531337698783911,
+        "ci_low": 0.8191550572519084,
+        "ci_high": 0.8845505864459329,
+        "n": 1069
+      },
+      "cohen_kappa": {
+        "estimate": 0.47427048637189356,
+        "ci_low": 0.4199343148727454,
+        "ci_high": 0.5272999326478313,
+        "n": 1666
+      }
+    },
+    "position_bias": null,
+    "length_bias": {
+      "judge_prefers_longer": 0.7373983739837399,
+      "human_prefers_longer": 0.684748427672956
+    },
+    "recorded_labels": {
+      "model_b": 1610,
+      "tie (inconsistent)": 380,
+      "tie": 220,
+      "model_a": 190
+    }
+  },
+  "reference": {
+    "human_vs_human": {
+      "agreement_with_ties": 0.669803250641574,
+      "agreement_without_ties": 0.8341902313624678,
+      "n_pairs": 1169,
+      "n_pairs_without_ties": 778
+    },
+    "baselines": {
+      "longer": {
+        "agreement_with_ties": 0.5348139255702281,
+        "agreement_single_order": 0.5348139255702281,
+        "agreement_without_ties": 0.684748427672956,
+        "cohen_kappa": 0.24532283103741742,
+        "swap_consistency": 1.0,
+        "first_position_win_rate": 0.5,
+        "judge_prefers_longer": 1.0
+      },
+      "first": {
+        "agreement_with_ties": 0.22509003601440578,
+        "agreement_single_order": 0.38235294117647056,
+        "agreement_without_ties": null,
+        "cohen_kappa": 0.0,
+        "swap_consistency": 0.0,
+        "first_position_win_rate": 1.0,
+        "judge_prefers_longer": null
+      }
+    }
+  }
+}
